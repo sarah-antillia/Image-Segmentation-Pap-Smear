@@ -134,7 +134,7 @@ Smear-2005-master
 3.3 Split master/severe_dysplastic to test, train and valid 
 </h3>
 By using Python script <a href="./projects/Mammogram/generator/split_master.py">split_master.py</a>,
- we have finally created <b>Pap-Smear</b> dataset from the Spear-2005-master/severe_dysplastic.<br>
+ we have finally created <b>Pap-Smear</b> dataset from the Smear-2005-master/severe_dysplastic.<br>
 <pre>
 Pap-Smear
 └─severe_dysplastic
@@ -293,5 +293,33 @@ References
 <b>1. PAP-SMEAR (DTU/HERLEV) DATABASES & RELATED STUDIES</b><br>
 <pre>
 https://mde-lab.aegean.gr/index.php/downloads/
+</pre>
+
+<b>2. Liquid based cytology pap smear images for multi-class diagnosis of cervical cancer</b><br>
+<pre>
+https://data.mendeley.com/datasets/zddtpgzv63/4
+</pre>
+
+<b>3. Pap-smear Benchmark Data For Pattern Classiﬁcation<br></b>
+Jan Jantzen, Jonas Norup , George Dounias , Beth Bjerregaard<br>
+<pre>
+https://www.researchgate.net/publication/265873515_Pap-smear_Benchmark_Data_For_Pattern_Classification
+</pre>
+<b>4. Deep Convolution Neural Network for Malignancy Detection and Classification in Microscopic Uterine Cervix Cell Images</b><br>
+Shanthi P B,1 Faraz Faruqi, Hareesha K S, and Ranjini Kudva<br>
+<pre>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7062987/
+</pre>
+
+<b>5. DeepCyto: a hybrid framework for cervical cancer classification by using deep feature fusion of cytology images</b><br>
+Swati Shinde, Madhura Kalbhor, Pankaj Wajire<br>
+<pre>
+https://www.aimspress.com/article/doi/10.3934/mbe.2022301?viewType=HTML#b40
+</pre>
+
+<b>6. EfficientNet-Pap-Smear</b><br>
+Toshiyuki Arai @antillia.com<br>
+<pre>
+https://github.com/atlan-antillia/EfficientNet-Pap-Smear
 </pre>
 
