@@ -97,7 +97,7 @@ in each category under <b>New database pictures</b> folder.<br>
 The script performs the following image processings.<br>
 <pre>
 1 Create square images from original BMP files in those categories.
- 
+
 2 Create square mask  corresponding to blue only regions in *-d.bmp mask files in those categories.
 
 3 Create rotated and flipped images and masks of size 128x128 to augment the resized square images and masks.
@@ -105,7 +105,6 @@ The script performs the following image processings.<br>
 
 The created <b>Smear-2005-master</b> dataset has the following folder structure.<br>
 <pre>
-Smear-2005-master
 ./Smear2005-master
 ├─carcinoma_in_situ
 │  ├─images
@@ -136,7 +135,7 @@ Smear-2005-master
 By using Python script <a href="./projects/Mammogram/generator/split_master.py">split_master.py</a>,
  we have finally created <b>Pap-Smear</b> dataset from the Smear-2005-master/severe_dysplastic.<br>
 <pre>
-Pap-Smear
+./Pap-Smear
 └─severe_dysplastic
     ├─test
     │  ├─images
@@ -239,7 +238,7 @@ Please move to ./projects/Pap-Smear/ directory, and run the following bat file.<
 <pre>
 >2.evalute.bat
 </pre>
-, which simply run the following command.<br>
+, which simply runs the following command.<br>
 <pre>
 >python ../../TensorflowUNetEvaluator.py ./train_eval_infer.config
 </pre>
@@ -255,12 +254,11 @@ We have also tried to infer the segmented region for
 images_dir    = "./Pap-Smear/severe_dysplastic/test/images" 
 </pre> dataset defined in <b>train_eval_infer.config</b>,
  by using our Pretrained Pap-Smear UNet Model.<br>
-
+Please move to ./projects/Pap-Smear/ directory, and run the following bat file.<br>
 <pre>
 >3.infer.bat
 </pre>
 , which simply runs the following command.<br>
-Please move to ./projects/Pap-Smear/ directory, and run the following bat file.<br>
 <pre>
 >python ../../TensorflowUNetInferencer.py ./train_eval_infer.config
 </pre>
