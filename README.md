@@ -360,7 +360,6 @@ Please move to ./projects/Seamless-Pap-Smear/ directory, and run the following b
 <br>
 <br>
 
-
 <b><a href="./projects/Seamless-Pap-Smear/test_output_merged">Inferred merged images (blended test/images with 
 inferred images)</a></b><br>
 <img src="./projects/Seamless-Pap-Smear/asset/inferred_test_output_merged.png" width="1024" height="auto"><br><br>
@@ -404,7 +403,6 @@ https://github.com/atlan-antillia/EfficientNet-Pap-Smear
 
 <b>7. Pap-Smear-Segmentation-Dataset-Augmentation</b><br>
 Toshiyuki Arai @antillia.com<br>
-<pre>
 <pre>
 https://github.com/sarah-antillia/Pap-Smear-Segmentation-Dataset-Augmentation
 </pre>
