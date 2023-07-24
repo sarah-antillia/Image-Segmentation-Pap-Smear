@@ -1,4 +1,4 @@
-# Image-Segmentation-Pap-Smear (2023/07/23)
+# Image-Segmentation-Pap-Smear (Updated: 2023/07/24)
 <h2>
 1 Image-Segmentation-Pap-Smear 
 </h2>
@@ -30,6 +30,13 @@ updated with new papers, studies, theses and citations related to the hosted pap
 
 In case you use material from this site, please cite the current link and related studies.
 </pre>
+<li>
+2024/07/24 Added <b>Seamless-Pap-Smear</b> to <b>./projects</b>.
+</li>
+<br>
+Please see also:<br>
+<a href="https://github.com/sarah-antillia/Pap-Smear-Segmentation-Dataset-Augmentation">Pap-Smear-Segmentation-Dataset-Augmentation</a>
+
 <br>
 <h2>
 2. Install Image-Segmentation-Pap-Smear 
@@ -44,12 +51,30 @@ You can see the following folder structure in your working folder.<br>
 Image-Segmentation-Pap-Smear 
 ├─asset
 └─projects
-    └─Pap-Smear
+    ├─Pap-Smear
+    │  ├─eval
+    │  ├─generator
+    │  ├─mini_test
+    │  ├─models
+    │  ├─Pap-Smear
+    │  │  └─severe_dysplastic
+    │  │      ├─test
+    │  │      │  ├─images
+    │  │      │  └─masks
+    │  │      ├─train
+    │  │      │  ├─images
+    │  │      │  └─masks
+    │  │      └─valid
+    │  │          ├─images
+    │  │          └─masks
+    │  ├─test_output
+    │  └─test_output_merged
+    └─Seamless-Pap-Smear
         ├─eval
         ├─generator
         ├─mini_test
         ├─models
-        ├─Pap-Smear
+        ├─Seamless-Pap-Smear
         │  └─severe_dysplastic
         │      ├─test
         │      │  ├─images
@@ -284,7 +309,63 @@ inferred images)</a></b><br>
 <!--
 -->
 
+<h2>
+7 Train TensorflowUNet Model by Seamless-Pap-Smear
+</h2>
+Please move to ./projects/Seamless-Pap-Smear directory, and run the following bat file.<br>
+<pre>
+>1.train.bat
+</pre>
+The training process has just been stopped at epoch 57 by an early-stopping callback as shown below.<br><br>
+<img src="./projects/Seamless-Pap-Smear/asset/train_console_output_at_epoch_57_0724.png" width="720" height="auto"><br>
+<br>
+<br>
+<b>Train metrics line graph</b>:<br>
+<img src="./projects/Seamless-Pap-Smear/asset/train_metrics.png" width="720" height="auto"><br>
+<br>
+<b>Train losses line graph</b>:<br>
+<img src="./projects/Seamless-Pap-Smear/asset/train_losses.png" width="720" height="auto"><br>
 
+
+<h2>
+8 Evaluation by Seamless Pretrained Model
+</h2>
+ We have evaluated prediction accuracy of our Pretrained Pap-Smear Model by using <b>valid</b> dataset.<br>
+Please move to ./projects/Seamless-Pap-Smear/ directory, and run the following bat file.<br>
+<pre>
+>2.evalute.bat
+</pre>
+
+The evaluation result is the following.<br>
+<img src="./projects/Seamless-Pap-Smear/asset/evaluate_console_output_at_epoch_57_0724.png" width="720" height="auto"><br>
+<br>
+
+<h2>
+9 Inference by Seamless Pretrained Model
+</h2>
+
+Please move to ./projects/Seamless-Pap-Smear/ directory, and run the following bat file.<br>
+<pre>
+>3.infer.bat
+</pre>
+<b><a href="./projects/Seamless-Pap-Smear/Pap-Smear/severe_dysplastic/test/images">Test input images</a> </b><br>
+<img src="./projects/Seamless-Pap-Smear/asset/test_image.png" width="1024" height="auto"><br>
+<br>
+<b><a href="./projects/Seamless-Pap-Smear/Pap-Smear/severe_dysplastic/test/masks">Test input ground truth mask</a> </b><br>
+<img src="./projects/Seamless-Pap-Smear/asset/test_ground_truth.png" width="1024" height="auto"><br>
+<br>
+
+<b><a href="./projects/Seamless-Pap-Smear/test_output/">Inferred images </a>test output</b><br>
+<img src="./projects/Seamless-Pap-Smear/asset/inferred_test_output.png" width="1024" height="auto"><br>
+<br>
+<br>
+
+
+<b><a href="./projects/Seamless-Pap-Smear/test_output_merged">Inferred merged images (blended test/images with 
+inferred images)</a></b><br>
+<img src="./projects/Seamless-Pap-Smear/asset/inferred_test_output_merged.png" width="1024" height="auto"><br><br>
+
+<br>
 <h3>
 References
 </h3>
@@ -321,3 +402,9 @@ Toshiyuki Arai @antillia.com<br>
 https://github.com/atlan-antillia/EfficientNet-Pap-Smear
 </pre>
 
+<b>7. Pap-Smear-Segmentation-Dataset-Augmentation</b><br>
+Toshiyuki Arai @antillia.com<br>
+<pre>
+<pre>
+https://github.com/sarah-antillia/Pap-Smear-Segmentation-Dataset-Augmentation
+</pre>
