@@ -102,7 +102,7 @@ PAP-SMEAR (DTU/HERLEV) DATABASES & RELATED STUDIES
 https://mde-lab.aegean.gr/index.php/downloads/
 Part II : smear2005.zip [85.17 MB] New Pap-smear Database (images)
 </pre>
-The dataset <b>New database pictures</b> has the following folder structure, which contains eight categories.<br>
+The dataset <b>New database pictures</b> has the following folder structure, which contains seven categories.<br>
 <pre>
 ./New database pictures
 ├─carcinoma_in_situ
