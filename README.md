@@ -3,7 +3,7 @@
 1 Image-Segmentation-Pap-Smear 
 </h2>
 <p>
-This is an experimental project for Image-Segmentation of Mammogram by using
+This is an experimental project for Image-Segmentation of Pap-Smear by using
  <a href="https://github.com/atlan-antillia/Tensorflow-Slightly-Flexible-UNet">Tensorflow-Slightly-Flexible-UNet</a> Model,
 which is a typical classic Tensorflow2 UNet implementation <a href="./TensorflowUNet.py">TensorflowUNet.py</a> 
 <p>
@@ -157,7 +157,7 @@ The created <b>Smear-2005-master</b> dataset has the following folder structure.
 <h3>
 3.3 Split master/severe_dysplastic to test, train and valid 
 </h3>
-By using Python script <a href="./projects/Mammogram/generator/split_master.py">split_master.py</a>,
+By using Python script <a href="./projects/Pap-Smear/generator/split_master.py">split_master.py</a>,
  we have finally created <b>Pap-Smear</b> dataset from the Smear-2005-master/severe_dysplastic.<br>
 <pre>
 ./Pap-Smear
@@ -182,7 +182,7 @@ By using Python script <a href="./projects/Mammogram/generator/split_master.py">
 <h2>
 4 Train TensorflowUNet Model
 </h2>
- We have trained Mammogram TensorflowUNet Model by using the following
+ We have trained Pap-Smear TensorflowUNet Model by using the following
  <b>train_eval_infer.config</b> file. <br>
 Please move to ./projects/Pap-Smear directory, and run the following bat file.<br>
 <pre>
