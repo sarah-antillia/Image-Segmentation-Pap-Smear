@@ -401,8 +401,8 @@ Toshiyuki Arai @antillia.com<br>
 https://github.com/atlan-antillia/EfficientNet-Pap-Smear
 </pre>
 
-<b>7. Pap-Smear-Segmentation-Dataset-Augmentation</b><br>
+<b>7. Augmentation-Pap-Smear-Segmentation-Dataset</b><br>
 Toshiyuki Arai @antillia.com<br>
 <pre>
-https://github.com/sarah-antillia/Pap-Smear-Segmentation-Dataset-Augmentation
+https://github.com/sarah-antillia/Augmentation-Pap-Smear-Segmentation-Dataset
 </pre>
