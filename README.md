@@ -35,7 +35,7 @@ In case you use material from this site, please cite the current link and relate
 </li>
 <br>
 Please see also:<br>
-<a href="https://github.com/sarah-antillia/Pap-Smear-Segmentation-Dataset-Augmentation">Pap-Smear-Segmentation-Dataset-Augmentation</a>
+<a href="https://github.com/sarah-antillia/Augmentation-Pap-Smear-Segmentation-Dataset">Augmentation-Pap-Smear-Segmentation-Dataset</a>
 
 <br>
 <h2>
